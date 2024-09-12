@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Sazzzel">
+
     <title>Northwind Saga</title>
     <link href="index.css" rel="stylesheet">
 </head>
@@ -29,17 +34,65 @@
 
     </table>
 
-    <div id="inventory" class="bar">
+<div id="createSettlement" class="bar">
+    <label>Name your settlement</label>
+    <input type="text" id="sName">
+
+    <input type="button" value="Create" onclick="NameSettelment()">
+
+</div>
+    <div id="playMode">
+
+        <div id="topbar" class="bar">
+
+            <div id="settlement">
+                
+            </div>
+
+            <div id="inventory" >
+               inv
+               inv
+               inv
+               inv
+               inv
+            
+               
+            </div>
+
+        </div>
+
+        <div id="settlers">
+          fred<br>
+          dave
+
+        </div>
 
     </div>
-
-    <div id="settlers">
-
-    </div>
+    
+    
 
     <footer>
         copyright: Sazzzel 2024(c)
     </footer>
+
+    <script>
+        var settlementName = ""; //Create String for Settlement Name
+
+        document.getElementById("playMode").style.display="none"; //Hide Playmode until settlement is created
+
+        function NameSettelment(){ //Handle onclick of settlement 
+
+            document.getElementById("playMode").style.display="block"; //Show playmode now settlement is created
+
+            document.getElementById("createSettlement").style.display="none"; // Hide Create Settlement now it has been created
+
+            settlementName = document.getElementById("sName").value; //Set Settlement Name to value in sName textbox
+
+            document.getElementById("settlement").innerHTML = settlementName; // Update page to show settlement name in settlement <div>
+
+        }
+
+    </script>
    
 </body>
 
