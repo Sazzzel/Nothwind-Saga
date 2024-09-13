@@ -1,15 +1,7 @@
 /* Global Styles */
-body {
-    background-color: #c8c8c8; 
-    color: #0e093c;
-    font-family: 'Viking', serif; /* Consider using a Viking-inspired font or serif */
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    
-}
 
-/* Header Styles */
+
+    /* Header Styles */
 h1 {
     font-size: 64px;
     color: #002442; 
@@ -21,6 +13,26 @@ h1 {
     text-align: center;
     
 }
+
+@media (max-width: 600px) {
+    h1 {
+      font-size: 30px; /* Make the font size smaller for phone screens */
+    }
+  }
+
+body {
+    background-color: #c8c8c8; 
+    color: #0e093c;
+    font-family: 'Viking', serif; /* Consider using a Viking-inspired font or serif */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+    
+}
+
+
+
 
 
 /* Frosty Borders */
@@ -117,7 +129,7 @@ footer {
     color: #ffffff;
     padding: 10px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     font-family: 'Viking', serif;
     letter-spacing: 3px;
@@ -173,3 +185,9 @@ legend{
     font-weight: 600;
     letter-spacing: 1.5px;
 }
+
+
+
+
+
+
