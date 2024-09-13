@@ -18,7 +18,8 @@ h1 {
     h1 {
       font-size: 30px; /* Make the font size smaller for phone screens */
     }
-  }
+}
+
 
 body {
     background-color: #c8c8c8; 
@@ -57,10 +58,34 @@ button {
     transition: all 0.3s ease;
 }
 
+@media (max-width: 600px) {
+    button {
+        background-color: #0d3b66; 
+        border: 2px solid #010417;
+        color: #ffffff;
+        padding: 6px 12px;
+        font-size: 16px;
+        font-family: 'Viking', serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+}
+
 button:hover {
     background-color: #144a76; 
     color: #e6f2fa; 
     transform: scale(1.05); /* Slight zoom on hover */
+}
+
+@media (max-width: 600px) {
+    button:hover {
+        background-color: #144a76; 
+        color: #e6f2fa; 
+        transform: scale(1.05); /* Slight zoom on hover */
+    }
 }
 
 /* Container for the Game Interface */
